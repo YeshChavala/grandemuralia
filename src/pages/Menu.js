@@ -8,7 +8,7 @@ const MenuPage = () => {
   // Generate an array of 23 image file names dynamically
   const menuItems = Array.from({ length: 23 }, (_, index) => ({
     id: index + 3, // Start from 3.jpg
-    imageUrl: `${process.env.PUBLIC_URL}/Menu/${index + 3}.jpg`,
+    imageUrl: `${process.env.PUBLIC_URL}/Menu/${index + 3}.jpg`, // Ensures compatibility with GitHub Pages
     name: `Piatto ${index + 3}`,
   }));
 
@@ -34,24 +34,25 @@ const MenuPage = () => {
 const styles = {
   menuGrid: {
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
+    gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", // Adjusted min size for better mobile layout
     gap: "20px",
     justifyContent: "center",
     alignItems: "center",
-    maxWidth: "1000px",
+    maxWidth: "1100px",
     margin: "0 auto",
   },
   menuItem: {
     border: "1px solid #ddd",
     borderRadius: "10px",
-    padding: "10px",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+    padding: "15px",
+    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.15)",
     backgroundColor: "#fff",
     textAlign: "center",
   },
   menuImage: {
     width: "100%",
-    height: "auto",
+    maxHeight: "180px", // Ensure consistent image height
+    objectFit: "cover", // Crop images to fit nicely
     borderRadius: "10px",
   },
 };

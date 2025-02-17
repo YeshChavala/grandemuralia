@@ -15,7 +15,9 @@ const StoryWrapper = styled.div`
   }
 `;
 
-const StyledImage = styled.img`
+const StyledImage = styled.img.attrs(props => ({
+  src: `${process.env.PUBLIC_URL}${props.src}` // Dynamically setting image src
+}))`
   max-width: 100%;
   height: auto;
   display: block;
@@ -45,7 +47,7 @@ const Story = () => {
           {/* 🍨 Fried Ice Cream Story */}
           <StoryCard>
             <Title level={2} style={{ color: "#8B0000" }}>🍨 Il Delizioso Gelato Fritto</Title>
-            <StyledImage src={`${process.env.PUBLIC_URL}/Story/history1.jpg`} />
+            <StyledImage src="/Story/history1.jpg" />
             <Paragraph style={{ fontSize: "1.2rem", lineHeight: "1.8" }}>
               Il **Gelato Fritto** è un dessert iconico della cucina asiatica.  
               Questa prelibatezza nasce avvolgendo una pallina di gelato in una crosta croccante,  
@@ -57,7 +59,7 @@ const Story = () => {
           {/* 🍶 Sake Story */}
           <StoryCard style={{ marginTop: "40px" }}>
             <Title level={2} style={{ color: "#8B0000" }}>🍶 La Storia del Sake</Title>
-            <StyledImage src={`${process.env.PUBLIC_URL}/Story/history2.jpg`} />
+            <StyledImage src="/Story/history2.jpg" />
             <Paragraph style={{ fontSize: "1.2rem", lineHeight: "1.8" }}>
               Il **Sake** è una bevanda alcolica tradizionale giapponese, realizzata attraverso la fermentazione del riso.  
               Sebbene sia più conosciuto in Giappone, il sake ha una lunga storia anche nella cultura cinese,  
