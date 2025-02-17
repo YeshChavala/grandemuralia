@@ -7,9 +7,9 @@ const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 15px 50px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(52, 2, 2, 0.1);
   backdrop-filter: blur(10px);
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 15px rgba(41, 17, 17, 0.1);
   position: fixed;
   width: 100%;
   top: 0;
@@ -20,7 +20,7 @@ const Nav = styled.nav`
 const Logo = styled.div`
   font-size: 24px;
   font-weight: bold;
-  color: #8B0000;
+  color:rgb(106, 25, 25);
   font-family: "Poppins", sans-serif;
 `;
 
@@ -40,7 +40,7 @@ const NavLinks = styled.div`
 
   a:hover {
     background: #8B0000;
-    color: white;
+    color: black;
   }
 `;
 
