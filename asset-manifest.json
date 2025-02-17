@@ -1,15 +1,10 @@
 {
   "files": {
-    "main.css": "/grandemuralia/static/css/main.e6c13ad2.css",
-    "main.js": "/grandemuralia/static/js/main.a87ab2d4.js",
-    "static/js/453.19a47633.chunk.js": "/grandemuralia/static/js/453.19a47633.chunk.js",
+    "main.js": "/grandemuralia/static/js/main.b688ebbd.js",
     "index.html": "/grandemuralia/index.html",
-    "main.e6c13ad2.css.map": "/grandemuralia/static/css/main.e6c13ad2.css.map",
-    "main.a87ab2d4.js.map": "/grandemuralia/static/js/main.a87ab2d4.js.map",
-    "453.19a47633.chunk.js.map": "/grandemuralia/static/js/453.19a47633.chunk.js.map"
+    "main.b688ebbd.js.map": "/grandemuralia/static/js/main.b688ebbd.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.a87ab2d4.js"
+    "static/js/main.b688ebbd.js"
   ]
 }
