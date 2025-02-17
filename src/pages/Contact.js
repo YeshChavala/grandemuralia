@@ -1,67 +1,74 @@
 import React from "react";
-import { Layout, Typography, Row, Col, Card } from "antd";
+import { Layout, Typography, Card } from "antd";
+import styled from "styled-components";
 
 const { Content } = Layout;
-const { Title, Text } = Typography;
+const { Title, Paragraph } = Typography;
+
+const ContactWrapper = styled.div`
+  text-align: center;
+  padding: 50px;
+  background-color: #fafafa;
+
+  @media (max-width: 768px) {
+    padding: 30px;
+  }
+`;
+
+const StyledImage = styled.img`
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+`;
+
+const ContactCard = styled(Card)`
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+`;
 
 const ContactPage = () => {
   return (
-    <Layout style={{ padding: "50px" }}>
+    <Layout>
       <Content>
-        {/* Contact Header */}
-        <Title level={2} style={{ textAlign: "center", color: "#8B0000" }}>
-          Contatta la Grande Muraglia Cinese
-        </Title>
+        <ContactWrapper>
+          <StyledImage src={`${process.env.PUBLIC_URL}/Contact/contact-banner.jpg`} />
 
-        {/* Address Section */}
-        <Row gutter={[16, 16]} justify="center">
-          <Col xs={24} sm={12} lg={8}>
-            <Card bordered>
-              <Title level={3}>Indirizzo</Title>
-              <Text>
-                Grande Muraglia Cinese <br />
-                Via Pacini 83, Catania, Italia <br />
-                📞 Telefono: <a href="tel:+39095312535">+39 095 312535</a>
-              </Text>
-            </Card>
-          </Col>
-        </Row>
+          <ContactCard>
+            <Title level={2} style={{ color: "#8B0000" }}>
+              Contattaci 📞
+            </Title>
+            <Paragraph style={{ fontSize: "1.2rem", lineHeight: "1.8" }}>
+              Vieni a trovarci a **La Grande Muraglia Cinese**! Siamo felici di offrirti un'autentica esperienza culinaria cinese.
+            </Paragraph>
+            <Paragraph>
+              📍 **Indirizzo:** Via Pacini, 83, 95129, Catania
+              <br />
+              📞 **Telefono:** +39 095 123 4567
+              <br />
+              📧 **Email:** info@grandemuraglia.it
+            </Paragraph>
+            <Paragraph>
+              ⏰ **Orari di Apertura:** <br />
+              🕒 Lun-Dom: **12:00 - 15:00 | 19:00 - 23:30**
+            </Paragraph>
 
-        {/* Social Media Section */}
-        <Row gutter={[16, 16]} justify="center" style={{ marginTop: "20px" }}>
-          <Col xs={24} sm={12} lg={8}>
-            <Card bordered>
-              <Title level={3}>Seguici sui Social</Title>
-              <Text>
-                <a href="https://www.facebook.com/profile.php?id=61572948896089" target="_blank" rel="noopener noreferrer">
-                  🌐 Visita la nostra pagina Facebook
-                </a>
-              </Text>
-            </Card>
-          </Col>
-        </Row>
-
-        {/* Instagram QR Code */}
-        <Row gutter={[16, 16]} justify="center" style={{ marginTop: "20px" }}>
-          <Col xs={24} sm={12} lg={8} style={{ textAlign: "center" }}>
-            <Title level={3}>Scansiona il codice QR per Instagram</Title>
-            <img src="public/Contact/contact-banner.jpg" alt="QR Code Instagram" width="200" />
-          </Col>
-        </Row>
-
-        {/* Reservation Section */}
-        <Row gutter={[16, 16]} justify="center" style={{ marginTop: "20px" }}>
-          <Col xs={24} sm={12} lg={8}>
-            <Card bordered>
-              <Title level={3}>Prenota un Tavolo</Title>
-              <Text>
-                <a href="https://forms.gle/Ys28RXw4UEMHEzGw6" target="_blank" rel="noopener noreferrer">
-                  📅 Prenota online
-                </a>
-              </Text>
-            </Card>
-          </Col>
-        </Row>
+            <a
+              href="https://goo.gl/maps/VU3G6yJX8iP2"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ fontSize: "1.2rem", color: "#8B0000", textDecoration: "underline" }}
+            >
+              📍 Guarda su Google Maps
+            </a>
+          </ContactCard>
+        </ContactWrapper>
       </Content>
     </Layout>
   );
