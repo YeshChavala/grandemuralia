@@ -45,7 +45,7 @@ const ContactPage = () => {
         <Row gutter={[16, 16]} justify="center" style={{ marginTop: "20px" }}>
           <Col xs={24} sm={12} lg={8} style={{ textAlign: "center" }}>
             <Title level={3}>Scansiona il codice QR per Instagram</Title>
-            <img src="/Contact/contact-banner.jpg" alt="QR Code Instagram" width="200" />
+            <img src="public/Contact/contact-banner.jpg" alt="QR Code Instagram" width="200" />
           </Col>
         </Row>
 

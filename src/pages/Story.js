@@ -28,24 +28,22 @@ const Story = () => {
     <Layout>
       <StoryWrapper>
         <Title level={2}>La Storia della Grande Muraglia Cinese</Title>
-          {/* 🍨 Fried Ice Cream Story */}
-          <Title level={3} style={{ marginTop: "40px", color: "#8B0000" }}>🍨 Il Delizioso Gelato Fritto</Title>
-        <StyledImage src="/Story/history1.jpg" />
-        
 
-       
+        {/* 🍨 Fried Ice Cream Story */}
+        <Title level={3} style={{ marginTop: "40px", color: "#8B0000" }}>🍨 Il Delizioso Gelato Fritto</Title>
+        <StyledImage src={`${process.env.PUBLIC_URL}/Story/history1.jpg`} />
+
         <Paragraph>
           Il **Gelato Fritto** è un dessert iconico della cucina asiatica.  
           Questa prelibatezza nasce avvolgendo una pallina di gelato in una crosta croccante,  
           che viene fritta rapidamente per creare un contrasto irresistibile tra il caldo e il freddo.  
           Il nostro segreto? La pastella leggera e l'uso di gelato artigianale, che rendono ogni morso una vera sorpresa.
         </Paragraph>
-       
 
         {/* 🍶 Sake Story */}
         <Title level={3} style={{ marginTop: "40px", color: "#8B0000" }}>🍶 La Storia del Sake</Title>
-        {/* 📌 Continuation of Main Story */}
-        <StyledImage src="/Story/history2.jpg" />
+        <StyledImage src={`${process.env.PUBLIC_URL}/Story/history2.jpg`} />
+
         <Paragraph>
           Il **Sake** è una bevanda alcolica tradizionale giapponese, realizzata attraverso la fermentazione del riso.  
           Sebbene sia più conosciuto in Giappone, il sake ha una lunga storia anche nella cultura cinese,  
@@ -53,8 +51,6 @@ const Story = () => {
           Alla Grande Muraglia Cinese, offriamo una selezione esclusiva di sake,  
           perfetta per accompagnare i nostri piatti autentici.
         </Paragraph>
-
-      
       </StoryWrapper>
     </Layout>
   );
