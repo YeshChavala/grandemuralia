@@ -44,7 +44,7 @@ const ContactPage = () => {
             <Title level={2} style={{ color: "#8B0000" }}>
               Contattaci 📞
             </Title>
-            <Paragraph style={{ fontSize: "1.2rem", lineHeight: "1.8" }}>
+            <Paragraph style={{ fontSize: "0.8rem", lineHeight: "1.2" }}>
               Vieni a trovarci a **La Grande Muraglia Cinese**! Siamo felici di offrirti un'autentica esperienza culinaria cinese.
             </Paragraph>
             <Paragraph>
@@ -52,7 +52,7 @@ const ContactPage = () => {
               <br />
               📞 **Telefono:** +39 095 123 4567
               <br />
-              📧 **Email:** info@grandemuraglia.it
+              📧 **Email:** lagrandemuraglia@gmail.com
             </Paragraph>
             <Paragraph>
               ⏰ **Orari di Apertura:** <br />
@@ -60,7 +60,7 @@ const ContactPage = () => {
             </Paragraph>
 
             <a
-              href="https://goo.gl/maps/VU3G6yJX8iP2"
+              href="https://maps.app.goo.gl/9f7efBYZK69UWo2u5"
               target="_blank"
               rel="noopener noreferrer"
               style={{ fontSize: "1.2rem", color: "#8B0000", textDecoration: "underline" }}

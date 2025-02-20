@@ -49,10 +49,10 @@ const Navbar = () => {
     <Nav>
       <Logo>Grande Muraglia</Logo>
       <NavLinks>
-        <Link to="/">Home</Link>
-        <Link to="/menu">Menu</Link>
-        <Link to="/story">Story</Link>
-        <Link to="/contact">Contact</Link>
+      <Link to="/">Home</Link>
+      <Link to="/menu">Menu</Link>
+      <Link to="/story">Story</Link>
+      <Link to="/contact">Contact</Link>
       </NavLinks>
     </Nav>
   );
