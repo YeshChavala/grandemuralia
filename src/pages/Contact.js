@@ -31,6 +31,22 @@ const ContactCard = styled(Card)`
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+`;
+
+// ✅ New QR Code Styling (Optimized for Mobile)
+const StyledQR = styled.img`
+  width: 180px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+
+  @media (max-width: 768px) {
+    width: 140px; /* ✅ Smaller on mobile */
+  }
 `;
 
 const ContactPage = () => {
@@ -44,7 +60,7 @@ const ContactPage = () => {
             <Title level={2} style={{ color: "#8B0000" }}>
               Contattaci 📞
             </Title>
-            <Paragraph style={{ fontSize: "0.8rem", lineHeight: "1.2" }}>
+            <Paragraph style={{ fontSize: "1rem", lineHeight: "1.8" }}>
               Vieni a trovarci a **La Grande Muraglia Cinese**! Siamo felici di offrirti un'autentica esperienza culinaria cinese.
             </Paragraph>
             <Paragraph>
@@ -68,6 +84,12 @@ const ContactPage = () => {
               📍 Guarda su Google Maps
             </a>
           </ContactCard>
+
+          {/* ✅ Instagram QR Code Section */}
+          <Title level={3} style={{ textAlign: "center", color: "#333", marginTop: "40px" }}>
+            📸 Seguici su Instagram!
+          </Title>
+          <StyledQR src={`${process.env.PUBLIC_URL}/Contact/instagram-qr.png`} />
         </ContactWrapper>
       </Content>
     </Layout>
