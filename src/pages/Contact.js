@@ -61,17 +61,17 @@ const ContactPage = () => {
               Contattaci 📞
             </Title>
             <Paragraph style={{ fontSize: "1rem", lineHeight: "1.8" }}>
-              Vieni a trovarci a **La Grande Muraglia Cinese**! Siamo felici di offrirti un'autentica esperienza culinaria cinese.
+              Vieni a trovarci a La Grande Muraglia Cinese! Siamo felici di offrirti un'autentica esperienza culinaria cinese.
             </Paragraph>
             <Paragraph>
-              📍 **Indirizzo:** Via Pacini, 83, 95129, Catania
+              📍 Indirizzo: Via Pacini, 83, 95129, Catania
               <br />
-              📞 **Telefono:** +39 095 123 4567
+              📞 Telefono: +39 095 123 4567
               <br />
-              📧 **Email:** lagrandemuraglia@gmail.com
+              📧 Email: lagrandemuraglia@gmail.com
             </Paragraph>
             <Paragraph>
-              ⏰ **Orari di Apertura:** <br />
+              ⏰ Orari di Apertura: <br />
               🕒 Lun-Dom: **12:00 - 15:00 | 19:00 - 23:30**
             </Paragraph>
 
@@ -84,12 +84,7 @@ const ContactPage = () => {
               📍 Guarda su Google Maps
             </a>
           </ContactCard>
-
-          {/* ✅ Instagram QR Code Section */}
-          <Title level={3} style={{ textAlign: "center", color: "#333", marginTop: "40px" }}>
-            📸 Seguici su Instagram!
-          </Title>
-          <StyledQR src={`${process.env.PUBLIC_URL}/Contact/instagram-qr.png`} />
+          
         </ContactWrapper>
       </Content>
     </Layout>

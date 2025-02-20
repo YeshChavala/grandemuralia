@@ -148,13 +148,8 @@ const HomePage = () => {
               Non possiamo che augurarvi di gustare i nostri piatti e trascorrere con noi magnifiche serate.
             </Paragraph>
           </StoryCard>
+          
         </StorySection>
-
-        {/* 📌 Instagram QR Code */}
-        <Title level={3} style={{ textAlign: "center", color: "#333", marginTop: "40px" }}>
-          📸 Seguici su Instagram!
-        </Title>
-        <StyledQR src={`${process.env.PUBLIC_URL}/Home/instagram-qr.png`} />
       </Content>
     </Layout>
   );
