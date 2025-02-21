@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <Routes>
-      <Route path="/home" element={<Home />} />   {/* ✅ Ensure "/" is Home */}
+      <Route path="/" element={<Home />} />   {/* ✅ Ensure "/" is Home */}
       <Route path="/menu" element={<Menu />} />
       <Route path="/story" element={<Story />} />
       <Route path="/contact" element={<Contact />} />
