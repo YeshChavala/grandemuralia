@@ -9,7 +9,7 @@ const MenuPage = () => {
   const menuItems = Array.from({ length: 23 }, (_, index) => ({
     id: index + 3, // Start from 3.jpg
     imageUrl: `${process.env.PUBLIC_URL}/Menu/${index + 3}.jpg`, // Ensures compatibility with GitHub Pages
-    name: `Piatto ${index + 3}`,
+    name: `page ${index + 1}`,
   }));
 
   return (

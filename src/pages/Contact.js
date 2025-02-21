@@ -54,7 +54,7 @@ const ContactPage = () => {
     <Layout>
       <Content>
         <ContactWrapper>
-          <StyledImage src={`${process.env.PUBLIC_URL}/Contact/contact-banner.jpg`} />
+          
 
           <ContactCard>
             <Title level={2} style={{ color: "#8B0000" }}>
@@ -72,7 +72,7 @@ const ContactPage = () => {
             </Paragraph>
             <Paragraph>
               ⏰ Orari di Apertura: <br />
-              🕒 Lun-Dom: **12:00 - 15:00 | 19:00 - 23:30**
+              🕒 Lun-Dom: 12:00 - 15:00 | 19:00 - 23:30
             </Paragraph>
 
             <a
