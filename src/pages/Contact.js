@@ -45,7 +45,7 @@ const StyledQR = styled.img`
   margin: 20px auto;
 
   @media (max-width: 768px) {
-    width: 140px; /* ✅ Smaller on mobile */
+    width: 60px; /* ✅ Smaller on mobile */
   }
 `;
 
@@ -62,17 +62,21 @@ const ContactPage = () => {
             </Title>
             <Paragraph style={{ fontSize: "1rem", lineHeight: "1.8" }}>
               Vieni a trovarci a La Grande Muraglia Cinese! Siamo felici di offrirti un'autentica esperienza culinaria cinese.
+              Vieni a trovarci a La Grande Muraglia Cinese! Siamo felici di offrirti un'autentica esperienza culinaria cinese.
             </Paragraph>
             <Paragraph>
               📍 Indirizzo: Via Pacini, 83, 95129, Catania
+              📍 Indirizzo: Via Pacini, 83, 95129, Catania
               <br />
               📞 Telefono: +39 095 123 4567
+              📞 Telefono: +39 095 123 4567
               <br />
+              📧 Email: lagrandemuraglia@gmail.com
               📧 Email: lagrandemuraglia@gmail.com
             </Paragraph>
             <Paragraph>
               ⏰ Orari di Apertura: <br />
-              🕒 Lun-Dom: **12:00 - 15:00 | 19:00 - 23:30**
+              🕒 Lun-Dom: 12:00 - 15:00 | 19:00 - 23:30
             </Paragraph>
 
             <a
@@ -84,7 +88,7 @@ const ContactPage = () => {
               📍 Guarda su Google Maps
             </a>
           </ContactCard>
-          
+
         </ContactWrapper>
       </Content>
     </Layout>

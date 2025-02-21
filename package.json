@@ -2,12 +2,14 @@
   "name": "grande-muraglia",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yeshchavala.github.io/grandemuralia",
+  "homepage": "https://yeshchavala.github.io/grandemuralia/Home",
   "dependencies": {
     "antd": "^5.24.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-pageflip": "^2.0.3",
     "react-router-dom": "^7.1.5",
+
     "react-scripts": "5.0.1",
     "styled-components": "^6.1.15",
     "web-vitals": "^2.1.4"
