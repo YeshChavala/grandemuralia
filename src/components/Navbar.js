@@ -30,7 +30,7 @@ const NavLinks = styled.div`
 
   a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
