@@ -7,13 +7,20 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  body {
-    font-family: "Poppins", sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    margin: 0;
-    padding-top: 80px; /* Space for fixed navbar */
-  }
+body {
+  background: linear-gradient(to bottom, #1b1b1b, #2c2c2c); /* Dark gradient */
+  color: #e0e0e0; /* Light text for readability */
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: #f8b400; /* Elegant golden for links */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffd700; /* Brighter gold on hover */
+}
 
   a {
     text-decoration: none;
