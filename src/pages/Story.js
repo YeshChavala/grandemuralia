@@ -58,10 +58,10 @@ const Story = () => {
     <Layout>
       <Content>
         <StoryWrapper>
-          {/* 🍨 Fried Ice Cream Story */}
+          {/* Fried Ice Cream Story */}
           <StoryCard>
             <Title level={2} style={{ color: "#8B0000", fontSize: "1.8rem" }}>
-              🍨 Il Delizioso Gelato Fritto
+               Il Delizioso Gelato Fritto
             </Title>
             <StyledImage src={`${process.env.PUBLIC_URL}/Story/history1.jpg`} />
             <Paragraph style={{ fontSize: "1.1rem", lineHeight: "1.7" }}>
@@ -74,7 +74,7 @@ const Story = () => {
             </Paragraph>
           </StoryCard>
 
-          {/* 🍶 Sake Story */}
+          {/* Sake Story */}
           <StoryCard>
             <Title level={2} style={{ color: "#8B0000", fontSize: "1.8rem" }}>
               🍶 La Storia del Sake

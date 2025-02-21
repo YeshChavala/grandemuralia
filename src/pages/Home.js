@@ -139,10 +139,10 @@ const HomePage = () => {
               principali regioni della Cina:
             </Paragraph>
             <ul style={{ textAlign: "left", fontSize: "1.1rem", lineHeight: "1.8" }}>
-              <li><strong>Nord:</strong> Cucina **Pechinese**, famosa per l’anatra.</li>
-              <li><strong>Est:</strong> Cucina di **Shanghai**, dove prevale l’uso dello zucchero.</li>
-              <li><strong>Ovest:</strong> Cucina del **Sichuan**, ricca di spezie e piatti piccanti.</li>
-              <li><strong>Sud:</strong> Cucina **Cantonese**, con una grande varietà di piatti.</li>
+              <li><strong>Nord:</strong> Cucina Pechinese, famosa per l’anatra.</li>
+              <li><strong>Est:</strong> Cucina di Shanghai, dove prevale l’uso dello zucchero.</li>
+              <li><strong>Ovest:</strong> Cucina del Sichuan, ricca di spezie e piatti piccanti.</li>
+              <li><strong>Sud:</strong> Cucina Cantonese, con una grande varietà di piatti.</li>
             </ul>
             <Paragraph style={{ fontSize: "1.1rem", lineHeight: "1.8" }}>
               Non possiamo che augurarvi di gustare i nostri piatti e trascorrere con noi magnifiche serate.

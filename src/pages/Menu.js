@@ -13,7 +13,6 @@ const MenuPage = () => {
   const menuItems = Array.from({ length: 23 }, (_, index) => ({
     id: index + 3, // Image files start from 3.jpg
     imageUrl: `${process.env.PUBLIC_URL}/Menu/${index + 3}.jpg`,
-    name: `Page ${index + 1}`,
   }));
 
   // ✅ Function to open modal with selected image
@@ -25,7 +24,7 @@ const MenuPage = () => {
   return (
     <Layout>
       <Content style={{ padding: "50px", textAlign: "center" }}>
-        <Title level={2}>📖 Il Nostro Menu - Tocca per Ingrandire</Title>
+        <Title level={2}> Il Nostro Menu </Title>
 
         {/* Grid Layout */}
         <div style={styles.menuGrid}>
